@@ -1,0 +1,217 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+  }
+  
+  /** NAVBAR **/
+  .navbar{
+    height: 80px;
+    background-color: white;
+    color: black;
+    position: relative;
+    display: flex;
+    
+  }
+  
+  /**NAV-SEARCH **/
+  .nav-search{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 3px;
+    margin-left: 150px;
+    border-bottom: 3px solid #a128e2;  
+    margin-bottom: 20px;
+    
+  } 
+  
+  .search-input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-right: 30px;
+  }
+  
+  
+  
+  /** NAV-LOG0 **/
+  .nav-logo{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;        
+    align-items: center;
+    margin: 0 auto;
+   }
+  
+  .logo{
+    background-image: url("https://static.startuptalky.com/2021/01/startuptalky_purplle_logo.png"); 
+    height: 60px;
+    width: 130px;
+    display: inline-block;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 1%;
+    z-index: 1;
+    transform: scale(1.3); 
+  }
+  
+  
+  
+  /** NAV-ICONS **/
+  .icons{
+    text-align: left;
+    display: inline-block;
+    font-size: 2.0rem;
+    position: absolute;
+    right: 90px;
+    top: 25px;
+  }
+  
+  div i:nth-child(2){
+    margin-left: 40px;
+  }
+  div i:nth-child(3){
+    margin-left: 40px;
+  }
+  
+  /** PANEL LINE **/
+  .panel-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 40px;
+    font-weight: 550;
+    background-color: whitesmoke;
+    margin-top: -120px;
+  }
+  
+  .panel p{
+    transition-duration: 0.5s;
+    transition-delay: 0ms;
+    transition-timing-function: ease-out;
+  }
+  
+  .panel p:hover{
+    color: #a128e2;
+    /* text-decoration: underline; */
+
+    text-decoration-thickness: 3px;
+    /* text-underline-offset: 11px; */
+  }
+  
+  .option-box1{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8f5305;
+    padding: 10px;
+  }
+  
+  
+  .shop-categories:hover + .option-box1 {
+    display: block;
+  }
+  
+  
+  
+  /* FIRST SLIDESHOW PANEL */
+  .first-slideshow {
+    position: relative;
+    margin-left: 70px;
+    margin-right: 50px;
+    width: 90%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .first-slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 3s all;
+  }
+  
+  .first-slideshow img.active {
+    opacity: 1;
+  }
+  
+  .first-slideshow button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 6rem;
+    color: darkgray;
+    cursor: pointer;
+  }
+  .first-slideshow .prev {
+    left: 10px; 
+    font-size: 4rem;
+  }
+  .first-slideshow .next {
+    right: 10px;
+    font-size: 4rem;
+  }
+  
+  
+  /* FEATURED */ 
+  .featured{
+    font-size: 1.5rem;
+    font-weight: 550;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .view-all{
+    font-size: 0.9rem;
+    color:  #a128e2;
+    text-align: center;
+    margin-top: -10px;
+    font-weight: 520;
+  }
+  .view-all:hover{
+    color:deeppink
+  }
+  
+  
+  /* PHOTO 1 */ 
+  .photo1{ 
+    position: relative;
+    margin-left: 110px;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  
+  /* BLOCK PHOTOS */
+  .block-photos {
+    transform: scale(0.9);
+    margin-top: -50px;
+    align-items: center;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  .container img{
+    width: 49.6%;
+   
+  }
